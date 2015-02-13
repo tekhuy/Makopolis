@@ -10,7 +10,6 @@ var Bank = function(){
    ["In Ruby, what does the .to_s method do?", ['convert an object into an integer', 'convert an object into a string', 'convert an object into a float', 'convert an object into a symbol'], 'convert an object into a string'],
    ["What does the L stand for in the SOLID principles?", ['Library dependence', 'The Luke Clewlow Principle', 'Liability Principle', 'Leskov Substitution Principle'], 'Leskov Substitution Principle'],
    ["How would you round up a floating point number?", ['.ceil', '.floor', '.roundup', '.round'], '.ceil'],
-   ["Array = [‘Dave’, ‘Jim’, ‘Bob’, ‘Tom’] How would you gather all combinations of two people together?", ['array.shuffle', 'array.join{|name| name.combination}', 'array.select{|name| name.shuffle}', 'array.combination(2)'], 'array.combination(2)']
    ["How would you add an element to the beginning of an array?", ['array.unshift(element)', 'array.shift(element)', 'array.append(element)', 'array.prepend(element'], 'array.unshift(element)'],
    ["How would you convert an array into a hash?", ['array => hash', 'hash[array]', 'hash << array', 'Hash[*array]'], 'Hash[*array]'],  
    ["How would you swap keys and values in a hash?", ['hash[key] <=> value', 'hash.invert', 'hash.swap(key, value)', 'hash[key] = value'], 'hash.invert'],
@@ -28,7 +27,7 @@ var Bank = function(){
 
 };
 
-Bank.prototype.questions = function(questionNumber){
+Bank.prototype.questions = function(questionNumber){ 
  var questionArray = this.questionBank[questionNumber];
  return questionArray[0];
 };
